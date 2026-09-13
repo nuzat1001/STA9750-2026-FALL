@@ -1,0 +1,84 @@
+---
+title: "Welcome to my website"
+---
+## About Me
+
+Hello! My name is Nuzat Nawal Chowdhury. I am currently a student in the STA9750 course at Baruch College. 
+
+I have bachelors in business and loved working as a business analyst at two tech companies. Working in tech has made me realize I would love to dive in deeper and decided to get my Master's in data analytics. This website will serve as a portfolio for the projects I complete throughout this course.
+## My Background
+My minor was Supply chain for my Bachelor's and I have experience working with supply chain softwares as a business analyst. I have more experience on the business side of things. And now I am building my skills in data analytics and programming which will help me understand the products I have written scopes for, and managed a team of developers for much better.
+
+## EDUCATION
+ZICKLIN SCHOOL OF BUSINESS, BARUCH COLLEGE, CUNY, New York, United States
+Master's in Business Analytics (MSBA), Major in Data Analytics
+August 2025- Present (Expected Graduation May 2027)
+BANGLADESH UNIVERSITY OF PROFESSIONALS, Dhaka, Bangladesh 
+Bachelor of Business Administration, Major in Marketing and Minor in Supply Chain Management, CGPA: 3.62
+January 2018 - December 2021
+
+## EXPERIENCE
+
+SELISE DIGITAL PLATFORMS, Dhaka, Bangladesh
+Business Consultant, CLM Amberg Loglay
+August 2024- August 2025
+CLM Amberg Log Lay is a specialized software used for planning and managing the construction and installation of railway tracks and their associated infrastructure. CLM automates material management, scheduling, and logistics among cross functional teams.
+Documented CLM infrastructure and created user documents for all roles of CLM systems
+
+Business Consultant, MagnetHub
+August 2023- August 2025
+- Analyzed market trends and consulted with clients and product team for MagnetHub and developed product roadmaps.
+-Developed product scope and SLAs, including technical documentation and pricing structures.
+
+Business Analyst, MagnetHub                                                               September 2022 –  July 2023
+- Drove product strategy and development for an interactive consumer IOT Platform worth 100k CHF with SwissDLT  wallet integration on a blockchain infrastructure.
+- Analyzed client’s requirements, user needs, market opportunities, and technical feasibility to create product roadmap.
+- Developed product scope & SLAs which include technical documentation and hosting and maintenance agreements
+- Devised development strategy based on Agile, relevant microservices and prioritization of component reusability.
+-Led cross-functional development teams for platform development, wallet development, hosting and QA.
+
+
+Business Analyst, Risk and Quality Management System (RiQS)
+November 2022 –  July 2023
+- Managed product development for AllCare (Later renamed to RiQS), a 360° hospital management system that includes android & iOS applications for hospital employees. The project is worth 180k CHF in forecasted revenue.
+- Collaborated with stakeholders to gather product requirements and prioritize requirements based on their importance to both customers and the business
+- Managed design, development, testing, and launch of key product modules, identified potential risks and developed strategies to address risks of deployment
+
+DARAZ HUNGRYNAKI, Dhaka, Bangladesh
+Junior Product Specialist, March 2022 – August 2022
+- Conducted business and technical requirement analysis to manage development and maintenance for Bangladesh’s first food delivery platform which was acquired by AliBaba Group in 2020. 
+- Created product requirements documents to guide development and testing.
+- Managed issue resolution across multiple platforms, ensuring stakeholder communication and satisfaction.
+
+## Connect with Me
+
+Feel free to reach out to me or check out my professional background:
+
+*   **Email:** [n.nawalchowdhury@gmail.com](mailto:n.nawalchowdhury@gmail.com)
+*   **GitHub:** [github.com/nuzat1001](https://github.com/nuzat1001)
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+if(!require("leaflet")){
+    options(repos=c(CRAN="https://cloud.r-project.org"))
+    install.packages("leaflet")
+    stopifnot(require("leaflet"))
+}
+
+baruch_longitude <- -73.98333
+baruch_latitude  <- +40.74028
+
+leaflet() |>
+  addTiles() |>
+  setView(baruch_longitude, baruch_latitude, zoom=17) |>
+  addPopups(baruch_longitude, baruch_latitude, 
+            "I am a Master's student at <b>Baruch College</b>!")
+```
+```{r}
+#| include: false
+1+1
+```
+--------------
+Last Updated: `r format(Sys.time(), "%A %m %d, %Y at %H:%M%p")`
