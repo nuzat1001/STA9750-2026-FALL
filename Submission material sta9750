@@ -1,2 +1,6 @@
 Submission Material for STA 9750 at Baruch College
 owner: <nuzat1001>
+if(!require("usethis")) install.packages("usethis")
+usethis::git_sitrep()
+
+
